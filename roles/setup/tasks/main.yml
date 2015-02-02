@@ -6,8 +6,8 @@
   user: name=sysadmin shell=/bin/bash uid=2000 group=sysadmin
 
 - name: Create .ssh directory for sysadmin user
-  file: path=/home/sysadmin/.ssh state=directory owner=sysadmin mode=0700
+  file: path=/home/sysadmin/.ssh state=directory owner=sysadmin mode=0700 group=sysadmin
   
 - name: Copy authorized_keys into place.
-  copy: src=authorized_keys dest=/home/sysadmin/.ssh/authorized_keys mode=0400
+  copy: src=authorized_keys dest=/home/sysadmin/.ssh/authorized_keys mode=0400 group=sysadmin owner=sysadmin
 
