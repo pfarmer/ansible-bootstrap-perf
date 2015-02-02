@@ -15,4 +15,4 @@
   copy: src=sshd_config dest=/etc/ssh/sshd_config
 
 - name: Restart sshd
-  service: name=ssh start=restarted
+  service: name=ssh state=restarted
