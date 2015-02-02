@@ -16,3 +16,7 @@
 
 - name: Restart sshd
   service: name=ssh state=restarted
+
+- name: Copy sudo config.
+  copy: src=sudo-users dest=/etc/sudoers.d/users owner=root group=root mode=0440
+
