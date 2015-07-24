@@ -1,6 +1,6 @@
-# ansible-bootstrap
+# ansible-bootstrap-perf
 
-A simple Ansible bootstrap for me Ubuntu 14.04 build.
+A simple Ansible bootstrap for my Ubuntu 14.04 build.
 
 As root:
 
